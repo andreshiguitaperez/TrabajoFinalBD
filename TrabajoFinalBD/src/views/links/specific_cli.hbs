@@ -1,0 +1,41 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/specific" method="GET">
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="cedula" placeholder="Cedula" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Buscar Cliente
+                            </button>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" value="{{cliente.nombre}}" name="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" value="{{cliente.fecha_cumple}}" name="fecha_cumple" class="form-control" placeholder="Fecha cumpleaños">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{cliente.telefono}}" name="telefono" class="form-control" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{cliente.direccion}}" name="direccion" class="form-control" placeholder="Dirección">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" value="{{cliente.pedido_id}}" name="pedido_id" class="form-control" placeholder="Id del pedido">
+                        </div>
+
+                        <a href="/links/edit/{{cliente.cedula}}" class="btn btn-secondary">Editar Cliente</a>
+                        <a href="/links/delete/{{cliente.cedula}}" class="btn btn-danger">Eliminar Cliente</a>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
