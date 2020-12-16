@@ -5,18 +5,23 @@
                 <div class="card-body">
                     <form action="/links/edit/{{cliente.cedula}}" method="POST">
                         <div class="form-group">
+                            <label for=""><b>Nombre</b></label>
                             <input type="text" value="{{cliente.nombre}}" name="nombre" class="form-control" placeholder="Nombre">
                         </div>
                         <div class="form-group">
+                            <label for=""><b>Fecha de cumpleaños</b></label>
                             <input type="text" value="{{cliente.fecha_cumple}}" name="fecha_cumple" class="form-control" placeholder="Fecha cumpleaños">
                         </div>
                         <div class="form-group">
+                            <label for=""><b>Teléfono</b></label>
                             <input type="text" value="{{cliente.telefono}}" name="telefono" class="form-control" placeholder="Teléfono">
                         </div>
                         <div class="form-group">
+                            <label for=""><b>Dirección</b></label>
                             <input type="text" value="{{cliente.direccion}}" name="direccion" class="form-control" placeholder="Dirección">
                         </div>
                         <div class="form-group">
+                            <label for=""><b>Id del pedido</b></label>
                             <input type="number" value="{{cliente.pedido_id}}" name="pedido_id" class="form-control" placeholder="Id del pedido">
                         </div>
                         <div class="form-group">

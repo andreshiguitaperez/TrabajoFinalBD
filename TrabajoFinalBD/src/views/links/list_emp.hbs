@@ -1,7 +1,7 @@
 <div class="container p-4">
     <div class="row">
 
-        {{#each clientes}}
+        {{#each empleados}}
             <div class="col-md-4">
                 <div class="card text-center">
                     <div class="card-body">
@@ -10,28 +10,28 @@
                             {{cedula}}
                         </p>
                         <p class="m-2">
-                            <label for=""><b>Nombre: </b></label>
-                            {{nombre}}
+                            <label for=""><b>Sueldo: </b></label>
+                            {{sueldo}}
                         </p>
                         <p class="m-2">
-                            <label for=""><b>Fecha de cumpleaños: </b></label>
-                            {{fecha_cumple}}
+                            <label for=""><b>¿Es chef? : </b></label>
+                            {{chef}}
                         </p>
                         <p class="m-2">
-                            <label for=""><b>Teléfono: </b></label>
-                            {{telefono}}
+                            <label for=""><b>¿Es mesero? : </b></label>
+                            {{mesero}}
                         </p>
                         <p class="m-2">
-                            <label for=""><b>Dirección: </b></label>
-                            {{direccion}}
+                            <label for=""><b>¿Es domiciliario? : </b></label>
+                            {{domiciliario}}
                         </p>
                         <p class="m-2">
                             <label for=""><b>Id del pedido: </b></label>
                             {{pedido_id}}
                         </p>
 
-                        <a href="/links/edit/{{cedula}}" class="btn btn-secondary">Editar Cliente</a>
-                        <a href="/links/delete/{{cedula}}" class="btn btn-danger">Eliminar Cliente</a>
+                        <a href="/links/edit_emp/{{cedula}}" class="btn btn-secondary">Editar Empleado</a>
+                        <a href="/links/delete_emp/{{cedula}}" class="btn btn-danger">Eliminar Empleado</a>
                         
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             <div class="col-md-4 mx-auto">
                 <div class="card card-body text-center">
                     <p>No hay usuarios guardados todavía</p>
-                    <a href="/links/add">Crea uno</a>
+                    <a href="/links/add_emp">Crea uno</a>
                 </div>
             </div>
         {{/each}}

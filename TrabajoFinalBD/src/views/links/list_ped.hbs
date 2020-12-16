@@ -1,0 +1,45 @@
+<div class="container p-4">
+    <div class="row">
+
+        {{#each pedidos}}
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p class="m-2">
+                            <label for=""><b>Id del pedido: </b></label>
+                            {{id_pedido}}
+                        </p>
+                        <p class="m-2">
+                            <label for=""><b>¿El pedido es local? : </b></label>
+                            {{pedido_local}}
+                        </p>
+                        <p class="m-2">
+                            <label for=""><b>¿El pedido es un domicilio? : </b></label>
+                            {{pedido_domicilio}}
+                        </p>
+                        <p class="m-2">
+                            <label for=""><b>Cedula del cliente: </b></label>
+                            {{cliente_id}}
+                        </p>
+                        <p class="m-2">
+                            <label for=""><b>Cedula del mesero que atiende: </b></label>
+                            {{mesero_id}}
+                        </p>
+
+                        <a href="/links/edit_ped/{{id_pedido}}" class="btn btn-secondary">Editar Pedido</a>
+                        <a href="/links/delete_ped/{{id_pedido}}" class="btn btn-danger">Eliminar Pedido</a>
+                        
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>No hay pedidos guardados todavía</p>
+                    <a href="/links/add_ped">¡Crea uno!</a>
+                </div>
+            </div>
+        {{/each}}
+
+    </div>
+</div>

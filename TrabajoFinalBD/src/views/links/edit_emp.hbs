@@ -1,0 +1,37 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/edit_emp/{{empleado.cedula}}" method="POST">
+                        <div class="form-group">
+                            <label for=""><b>Sueldo</b></label>
+                            <input type="text" value="{{empleado.sueldo}}" name="sueldo" class="form-control" placeholder="Sueld">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Chef</b></label>
+                            <input type="text" value="{{empleado.chef}}" name="chef" class="form-control" placeholder="Chef">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Mesero</b></label>
+                            <input type="text" value="{{empleado.mesero}}" name="mesero" class="form-control" placeholder="Mesero">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Domiciliario</b></label>
+                            <input type="text" value="{{empleado.domiciliario}}" name="domiciliario" class="form-control" placeholder="Domiciliario">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Id del pedido</b></label>
+                            <input type="number" value="{{empleado.pedido_id}}" name="pedido_id" class="form-control" placeholder="Id del pedido">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Actualizar Empleado
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
